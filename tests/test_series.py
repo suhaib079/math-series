@@ -3,6 +3,7 @@ from math_series.series import fibonacci
 from math_series.series import lucas
 from math_series.series import sum_series
 
+
 def test_version():
     assert __version__ == '0.1.0'
 

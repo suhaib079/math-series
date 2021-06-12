@@ -33,3 +33,10 @@ def sum_series(n,x=0,y=1):
     else:
         return fibonacci(n) + lucas(x)
 
+
+
+print(fibonacci(8))
+print(lucas(7))
+   
+ 
+ 
