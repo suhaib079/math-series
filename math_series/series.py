@@ -31,7 +31,7 @@ def sum_series(n,x=0,y=1):
         return fibonacci(n)
 
     else:
-        return fibonacci(n) + lucas(x)
+        return sum_series(n-1, x, y) + sum_series(n-2, x, y)
 
 
 
