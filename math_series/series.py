@@ -23,16 +23,13 @@ print(lucas(5))
 
 
 
-def sum_series(n,x=0,y=1):
-    
-    if x == 2 and y == 1:
-        return lucas(n)
-    elif x == 0 and y == 1:
-        return fibonacci(n)
-
+def sum_series(n, v1=0, v2=1):
+    if n == 0:
+        return v1
+    if n == 1: 
+       return v2
     else:
-        return sum_series(n-1, x, y) + sum_series(n-2, x, y)
-
+        return sum_series(n-1,v1,v2) + sum_series(n-2,v1,v2)
 
 
 print(fibonacci(8))
